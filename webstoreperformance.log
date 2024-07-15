@@ -1,0 +1,96 @@
+2024-02-04 17:19:03 %-5o ContextLoader:305 - Root WebApplicationContext: initialization started
+2024-02-04 17:19:03 %-5o AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sun Feb 04 17:19:03 COT 2024]; root of context hierarchy
+2024-02-04 17:19:03 %-5o AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.packt.webstore.config.RootApplicationContextConfig]
+2024-02-04 17:19:03 %-5o AutowiredAnnotationBeanPostProcessor:156 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2024-02-04 17:19:03 %-5o EmbeddedDatabaseFactory:185 - Starting embedded database: url='jdbc:hsqldb:mem:testdb', username='sa'
+2024-02-04 17:19:04 %-5o ScriptUtils:444 - Executing SQL script from class path resource [db/sql/create-table.sql]
+2024-02-04 17:19:04 %-5o ScriptUtils:510 - Executed SQL script from class path resource [db/sql/create-table.sql] in 0 ms.
+2024-02-04 17:19:04 %-5o ScriptUtils:444 - Executing SQL script from class path resource [db/sql/insert-data.sql]
+2024-02-04 17:19:04 %-5o ScriptUtils:510 - Executed SQL script from class path resource [db/sql/insert-data.sql] in 0 ms.
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/hola]}" onto public java.lang.String com.packt.webstore.controller.HomeController.welcome(org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products]}" onto public java.lang.String com.packt.webstore.controller.ProductController.list(org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/add],methods=[GET]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getAddNewProductForm(org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/add],methods=[POST]}" onto public java.lang.String com.packt.webstore.controller.ProductController.processAddNewProductForm(com.packt.webstore.domain.Product,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/filter/{params}]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getProductsByFilter(java.util.Map<java.lang.String, java.util.List<java.lang.String>>,org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/update/stock]}" onto public java.lang.String com.packt.webstore.controller.ProductController.updateStock(org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/product]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getProductById(java.lang.String,org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o SimpleUrlHandlerMapping:341 - Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2024-02-04 17:19:04 %-5o SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2024-02-04 17:19:04 %-5o RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Feb 04 17:19:03 COT 2024]; root of context hierarchy
+2024-02-04 17:19:04 %-5o ContextLoader:345 - Root WebApplicationContext: initialization completed in 1626 ms
+2024-02-04 17:19:04 %-5o DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2024-02-04 17:19:04 %-5o AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 04 17:19:04 COT 2024]; parent: Root WebApplicationContext
+2024-02-04 17:19:04 %-5o AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.packt.webstore.config.WebApplicationContextConfig]
+2024-02-04 17:19:04 %-5o AutowiredAnnotationBeanPostProcessor:156 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2024-02-04 17:19:04 %-5o EmbeddedDatabaseFactory:185 - Starting embedded database: url='jdbc:hsqldb:mem:testdb', username='sa'
+2024-02-04 17:19:04 %-5o ScriptUtils:444 - Executing SQL script from class path resource [db/sql/create-table.sql]
+2024-02-04 17:19:04 %-5o ScriptUtils:510 - Executed SQL script from class path resource [db/sql/create-table.sql] in 16 ms.
+2024-02-04 17:19:04 %-5o ScriptUtils:444 - Executing SQL script from class path resource [db/sql/insert-data.sql]
+2024-02-04 17:19:04 %-5o ScriptUtils:510 - Executed SQL script from class path resource [db/sql/insert-data.sql] in 0 ms.
+2024-02-04 17:19:04 %-5o SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2024-02-04 17:19:04 %-5o SimpleUrlHandlerMapping:341 - Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2024-02-04 17:19:04 %-5o RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 04 17:19:04 COT 2024]; parent: Root WebApplicationContext
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/hola]}" onto public java.lang.String com.packt.webstore.controller.HomeController.welcome(org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products]}" onto public java.lang.String com.packt.webstore.controller.ProductController.list(org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/add],methods=[GET]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getAddNewProductForm(org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/add],methods=[POST]}" onto public java.lang.String com.packt.webstore.controller.ProductController.processAddNewProductForm(com.packt.webstore.domain.Product,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/filter/{params}]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getProductsByFilter(java.util.Map<java.lang.String, java.util.List<java.lang.String>>,org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/update/stock]}" onto public java.lang.String com.packt.webstore.controller.ProductController.updateStock(org.springframework.ui.Model)
+2024-02-04 17:19:04 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/product]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getProductById(java.lang.String,org.springframework.ui.Model)
+2024-02-04 17:19:05 %-5o DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 156 ms
+2024-02-04 17:19:05 %-5o AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 04 17:19:04 COT 2024]; parent: Root WebApplicationContext
+2024-02-04 17:19:05 %-5o EmbeddedDatabaseFactory:217 - Shutting down embedded database: url='jdbc:hsqldb:mem:testdb'
+2024-02-04 17:19:05 %-5o AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Sun Feb 04 17:19:03 COT 2024]; root of context hierarchy
+2024-02-04 17:19:05 %-5o EmbeddedDatabaseFactory:217 - Shutting down embedded database: url='jdbc:hsqldb:mem:testdb'
+2024-02-04 17:19:06 %-5o ContextLoader:305 - Root WebApplicationContext: initialization started
+2024-02-04 17:19:06 %-5o AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Sun Feb 04 17:19:06 COT 2024]; root of context hierarchy
+2024-02-04 17:19:06 %-5o AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.packt.webstore.config.RootApplicationContextConfig]
+2024-02-04 17:19:06 %-5o AutowiredAnnotationBeanPostProcessor:156 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2024-02-04 17:19:07 %-5o EmbeddedDatabaseFactory:185 - Starting embedded database: url='jdbc:hsqldb:mem:testdb', username='sa'
+2024-02-04 17:19:07 %-5o ScriptUtils:444 - Executing SQL script from class path resource [db/sql/create-table.sql]
+2024-02-04 17:19:07 %-5o ScriptUtils:510 - Executed SQL script from class path resource [db/sql/create-table.sql] in 0 ms.
+2024-02-04 17:19:07 %-5o ScriptUtils:444 - Executing SQL script from class path resource [db/sql/insert-data.sql]
+2024-02-04 17:19:07 %-5o ScriptUtils:510 - Executed SQL script from class path resource [db/sql/insert-data.sql] in 14 ms.
+2024-02-04 17:19:07 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/hola]}" onto public java.lang.String com.packt.webstore.controller.HomeController.welcome(org.springframework.ui.Model)
+2024-02-04 17:19:07 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products]}" onto public java.lang.String com.packt.webstore.controller.ProductController.list(org.springframework.ui.Model)
+2024-02-04 17:19:07 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/add],methods=[GET]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getAddNewProductForm(org.springframework.ui.Model)
+2024-02-04 17:19:07 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/add],methods=[POST]}" onto public java.lang.String com.packt.webstore.controller.ProductController.processAddNewProductForm(com.packt.webstore.domain.Product,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+2024-02-04 17:19:07 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/filter/{params}]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getProductsByFilter(java.util.Map<java.lang.String, java.util.List<java.lang.String>>,org.springframework.ui.Model)
+2024-02-04 17:19:07 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/update/stock]}" onto public java.lang.String com.packt.webstore.controller.ProductController.updateStock(org.springframework.ui.Model)
+2024-02-04 17:19:07 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/product]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getProductById(java.lang.String,org.springframework.ui.Model)
+2024-02-04 17:19:07 %-5o SimpleUrlHandlerMapping:341 - Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2024-02-04 17:19:07 %-5o SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2024-02-04 17:19:07 %-5o RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Feb 04 17:19:06 COT 2024]; root of context hierarchy
+2024-02-04 17:19:08 %-5o ContextLoader:345 - Root WebApplicationContext: initialization completed in 1904 ms
+2024-02-04 17:19:08 %-5o DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2024-02-04 17:19:08 %-5o AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 04 17:19:08 COT 2024]; parent: Root WebApplicationContext
+2024-02-04 17:19:08 %-5o AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.packt.webstore.config.WebApplicationContextConfig]
+2024-02-04 17:19:08 %-5o AutowiredAnnotationBeanPostProcessor:156 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2024-02-04 17:19:08 %-5o EmbeddedDatabaseFactory:185 - Starting embedded database: url='jdbc:hsqldb:mem:testdb', username='sa'
+2024-02-04 17:19:08 %-5o ScriptUtils:444 - Executing SQL script from class path resource [db/sql/create-table.sql]
+2024-02-04 17:19:08 %-5o ScriptUtils:510 - Executed SQL script from class path resource [db/sql/create-table.sql] in 0 ms.
+2024-02-04 17:19:08 %-5o ScriptUtils:444 - Executing SQL script from class path resource [db/sql/insert-data.sql]
+2024-02-04 17:19:08 %-5o ScriptUtils:510 - Executed SQL script from class path resource [db/sql/insert-data.sql] in 0 ms.
+2024-02-04 17:19:08 %-5o SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2024-02-04 17:19:08 %-5o SimpleUrlHandlerMapping:341 - Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2024-02-04 17:19:08 %-5o RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 04 17:19:08 COT 2024]; parent: Root WebApplicationContext
+2024-02-04 17:19:08 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/hola]}" onto public java.lang.String com.packt.webstore.controller.HomeController.welcome(org.springframework.ui.Model)
+2024-02-04 17:19:08 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products]}" onto public java.lang.String com.packt.webstore.controller.ProductController.list(org.springframework.ui.Model)
+2024-02-04 17:19:08 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/add],methods=[GET]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getAddNewProductForm(org.springframework.ui.Model)
+2024-02-04 17:19:08 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/add],methods=[POST]}" onto public java.lang.String com.packt.webstore.controller.ProductController.processAddNewProductForm(com.packt.webstore.domain.Product,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+2024-02-04 17:19:08 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/products/filter/{params}]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getProductsByFilter(java.util.Map<java.lang.String, java.util.List<java.lang.String>>,org.springframework.ui.Model)
+2024-02-04 17:19:08 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/update/stock]}" onto public java.lang.String com.packt.webstore.controller.ProductController.updateStock(org.springframework.ui.Model)
+2024-02-04 17:19:08 %-5o RequestMappingHandlerMapping:537 - Mapped "{[/market/product]}" onto public java.lang.String com.packt.webstore.controller.ProductController.getProductById(java.lang.String,org.springframework.ui.Model)
+2024-02-04 17:19:08 %-5o DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 266 ms
+2024-02-04 17:19:13 %-5o ProcessingTimeLogInterceptor:34 - 50 millisecond taken to process the request http://localhost:8080/webstore/market/products
+2024-02-04 17:19:21 %-5o ProcessingTimeLogInterceptor:34 - 124 millisecond taken to process the request http://localhost:8080/webstore/market/product?id=P1234
+2024-02-04 17:19:24 %-5o ProcessingTimeLogInterceptor:34 - 1 millisecond taken to process the request http://localhost:8080/webstore/market/products
+2024-02-04 17:19:25 %-5o ProcessingTimeLogInterceptor:34 - 1 millisecond taken to process the request http://localhost:8080/webstore/market/product?id=P1235
+2024-02-04 17:19:26 %-5o ProcessingTimeLogInterceptor:34 - 1 millisecond taken to process the request http://localhost:8080/webstore/market/products
+2024-02-04 17:19:27 %-5o ProcessingTimeLogInterceptor:34 - 2 millisecond taken to process the request http://localhost:8080/webstore/market/product?id=P1236
+2024-02-04 17:19:28 %-5o ProcessingTimeLogInterceptor:34 - 0 millisecond taken to process the request http://localhost:8080/webstore/market/products
+2024-02-04 17:19:37 %-5o ProcessingTimeLogInterceptor:34 - 0 millisecond taken to process the request http://localhost:8080/webstore/market/products/add
+2024-02-04 17:23:26 %-5o AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Feb 04 17:19:08 COT 2024]; parent: Root WebApplicationContext
+2024-02-04 17:23:26 %-5o EmbeddedDatabaseFactory:217 - Shutting down embedded database: url='jdbc:hsqldb:mem:testdb'
+2024-02-04 17:23:26 %-5o AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Sun Feb 04 17:19:06 COT 2024]; root of context hierarchy
+2024-02-04 17:23:26 %-5o EmbeddedDatabaseFactory:217 - Shutting down embedded database: url='jdbc:hsqldb:mem:testdb'
